@@ -1,0 +1,78 @@
+.search{
+    background-color:  $color-grey-2 ;
+    .search__content{
+        padding: 40px 0;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search__area{
+            width: 30%;
+            display:flex;
+            @media screen and (max-width: 768px){
+                display:none;
+            }
+            .input-group-prepend{
+               
+                .input-group-text{
+                    font-size: 30px;
+                    color:$color-white-0;
+                    background-color: $color-grey-2;
+                    border:none;
+                    // border: 1px solid $color-blue-1;
+                    border-radius:0;
+                    // border:none;
+                    &:focus{
+                        border: 1px solid $color-blue-1;
+                        border-right:none;
+                    }
+                }
+            }
+            .form-control{
+                color: $color-white-0;
+                font-size: 30px;
+                background-color: $color-grey-2;
+                border:none;
+                border-radius: 0;
+                &:focus{
+                    outline:none;
+                    box-shadow: none;
+                    border: 1px solid $color-blue-1;
+                    // border-left:none;
+                    & + .input-group-prepend{
+                            .input-group-text{
+                                font-size: 30px;
+                                color:$color-white-0;
+                                background-color: $color-grey-2;
+                                border: 1px solid $color-blue-1;
+                                border-right:none;
+                                border-radius:0;
+                            }
+                        }
+                    &:hover{
+                        border:none;
+                        & + .input-group-prepend{
+                            .input-group-text{
+                                border:none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search__link{
+            text-align: center;
+            a{  
+                color: $color-grey-4;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            a:first-child{
+                color: $color-white-0;
+            }
+            a:hover{
+                color: $color-white-0;
+            }
+        }
+    }
+}

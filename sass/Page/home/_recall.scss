@@ -1,0 +1,16 @@
+.recall{
+    .recall__content{
+        padding: 0px 0;
+        text-align: center;
+        background-color: $color-grey-0;
+        h2{
+            padding: 30px 0;
+            color: $color-orange-0;
+            font-size: 55px;
+            font-weight: 300;
+        }
+        button{
+            margin-bottom: 30px;
+        }
+    }
+}

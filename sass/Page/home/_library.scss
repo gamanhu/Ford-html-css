@@ -1,0 +1,167 @@
+.library{
+    background-color:$color-grey-5;
+    font-weight: 100;
+    .library__content{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+        // @media screen and (max-width: 768px){
+        //     display:block;
+        //     .library__column{
+        //         display: block;
+        //         .library__item{
+        //             .librery__content{
+        //                 display:none;
+        //             }
+        //         }
+        //     }
+        // }
+        .library__column{
+            display:flex;
+            justify-content: space-between;
+            .library__item{
+                padding-left: 30px;
+                list-style-type: none;
+                width: 50%;
+                display: inline-block;
+                .list__heading{
+                    padding: 30px 0;
+                    box-sizing: border-box;
+                    span{
+                        color:$color-white-0;
+                        i{
+                            display:none;
+                        }
+                    }
+                    
+                }
+
+                .list__content{
+                    // display:block;
+                    list-style-type: none;
+                    color: $color-grey-4;
+                    li{
+                        cursor: pointer;
+                        font-size: 15px;
+                        &:hover{
+                            color:$color-white-0;
+                        }
+
+                    }
+                }
+            }
+        }
+        .library__2{
+            width: 40%;
+            @media screen and (max-width: 768px){
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                .library__item{
+                    width: 100%;
+                    display:block;
+                    margin: 0 auto;
+                    .list__heading{
+                        position: relative;
+                        &::before{
+                            position:absolute;
+                            content: "";
+                            width: 115%;
+                            height: 1px;
+                            background: $color-grey-4;
+                            bottom: 0;
+                            left: -15%;
+                        }
+                        span{
+                            display: inline-block;
+                            width: 47%;
+
+                            i{
+                                display: inline-block;
+                                width: 100%;
+                                // margin-right:auto;
+                                text-align: right;
+                                padding-right: 20%;
+                            }
+                        }
+                    }
+                    .list__content{
+                        padding: 20px 0;
+                        position: relative;
+                        display:none;
+                        &::before{
+                            position:absolute;
+                            content: "";
+                            width: 115%;
+                            height: 1px;
+                            background: $color-grey-4;
+                            bottom: 0;
+                            left: -15%;
+
+                        }
+                    }
+                }
+            }
+        }
+        .library__3{
+            width:60%;
+            @media screen and (max-width: 992px){
+                display:block;
+                margin: 0 auto;
+                .library__item{
+                    display:block;
+                    margin: 0 auto;
+                    .list__heading{
+                        position: relative;
+                        &::before{
+                            position:absolute;
+                            content: "";
+                            width: 115%;
+                            height: 1px;
+                            background: $color-grey-4;
+                            bottom: 0;
+                            left: -15%;
+
+                        }
+                        span{
+                            display: inline-block;
+                            width: 47%;
+
+                            i{
+                                display: inline-block;
+                                width: 100%;
+                                // margin-right:auto;
+                                text-align: right;
+                                padding-right: 20%;
+                            }
+                        }
+                    }
+                    .list__content{
+                        padding: 20px 0;
+                        position: relative;
+                        display:none;
+                        &::before{
+                            position:absolute;
+                            content: "";
+                            width: 115%;
+                            height: 1px;
+                            background: $color-grey-4;
+                            bottom: 0;
+                            left: -15%;
+
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 768px){
+                width: 100%;
+                .library__item{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}

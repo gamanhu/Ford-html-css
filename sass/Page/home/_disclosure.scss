@@ -1,0 +1,27 @@
+.disclosure{
+    .disclosure__content{
+        text-decoration: none;
+        padding: 30px 0;
+        justify-content: center;
+        button{  
+            padding: 10px 0;
+            width:100%;
+            background-color: white;
+            border:none;
+            color: $color-blue-1;
+            text-align: center;
+        }
+      
+    }
+    .disclosure__regulation{
+        // display: none;
+        background-color: $color-grey-0;
+        overflow-y:auto; 
+        height:0vh;
+        transition: all 0.5s;
+        p{
+            padding: 10px 20px;
+        }
+
+    }
+}

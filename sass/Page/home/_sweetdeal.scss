@@ -1,0 +1,55 @@
+.sweetdeal{
+    display:block;
+    // font-size: 10px;
+    .sweetdeal__content{
+        position: relative;
+        img{
+            width:100%;
+            z-index:3;
+        }
+        img:nth-child(2){
+            display:none;
+        }
+        a{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            
+            
+            h2{
+                color: $color-white-0;
+                padding: 20px 0px;
+                font-size: 3.5vw;
+                font-weight: 200;
+    
+            }
+            p{
+                color: $color-white-0;
+                padding: 20px 0px;
+                font-size: 1.3vw;
+                cursor: pointer;
+            }
+        }
+        @media screen and (max-width: 800px){
+            img:first-child{
+                display:none;
+
+            }
+            img:nth-child(2){
+                display: block;
+                width:100%;
+            }
+            a{
+                h2{
+                    font-size: 5vw;
+                }
+                p{
+                    font-size: 2vw;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

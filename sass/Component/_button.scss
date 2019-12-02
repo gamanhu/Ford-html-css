@@ -1,0 +1,51 @@
+.btn{
+    &--circle-arrow{
+        @include button($color-white-0,rgba(0,0,0,0),$color-white-0,rgba(0,0,0,0),$color-white-0,$color-white-0);
+        width:25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        overflow: hidden;
+        
+
+    }
+
+    &--white{
+        @include button($color-white-0,$color-blue-1,$color-white-0,$color-blue-1,$color-white-0,$color-blue-2);
+        text-align: center;
+        width: 270px;
+        min-height: 50px;
+        font-size: 16px;
+        padding: 15px 20px;
+
+
+    }
+    &--orange{
+        @include button($color-white-0,$color-orange-0,$color-orange-0,$color-orange-0,$color-white-0,$color-orange-0);
+        text-align: center;
+        width: 270px;
+        min-height: 50px;
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    &--eng{
+            @include button($color-white-0,$color-blue-2,$color-blue-2,$color-white-0,$color-blue-2,$color-blue-2);
+            text-align: center;
+            width: 90%;
+            min-height: 30px;
+            font-size: 16px;
+            padding: 5px 20px;
+            margin: 5px auto;
+    }
+    &--spa{
+        @include button($color-blue-2,$color-white-0,$color-blue-2,$color-blue-2,$color-white-0,$color-blue-2);
+            text-align: center;
+            width: 90%;
+            min-height: 30px;
+            font-size: 16px;
+            padding: 5px 20px;
+            margin: 5px auto;
+    }
+    
+}

@@ -1,0 +1,165 @@
+.brand-gallery{
+    width:100%;
+    .brand-gallery__content{
+        display:grid;
+        grid-template-columns: repeat(4,25%);
+        grid-auto-rows: 1fr;
+        // height: calc(100vh);
+        @media screen and (max-width: 768px){
+            display:block;
+            .item-1{
+                padding: 30px 0;
+                p{
+                    display:none;
+                }
+            }
+        }
+        .brand-gallery__item{
+            position:relative;
+            width:100%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                transition: all 0.3s;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            .brand-gallery__words{
+                position: absolute;
+                bottom: 0;
+                left:0;
+                width: 100%;
+                height: 20%;
+                background-color: rgba(6,120,188,0.5);
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    padding-left: 20px;
+                    color:white;
+                    font-size: 15px;
+                    width: 80%;
+                    @media screen and (max-width:768px){
+                        font-size: 25px;
+                        font-weight: 200;
+                    }
+                }
+                .brand-gallery__icon{
+                    width:20%;
+                    height: 100%;
+                    @media screen and (max-width:768px){
+                        width: 10%;
+                        height: 100%;
+                    }
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        .svg-1{
+                            display: none;
+                        }
+                        .svg-2{
+                            display: inline;
+                        }
+                    }
+                    .svg-1{
+                        display: inline;
+                        // padding: 0  10px;
+                        width: 45%;
+                        height: 45%;
+                        .cls-1{
+                            stroke: white;
+                            fill:none;
+                        }
+                       
+                    }
+                    .svg-2{
+                        
+                        display:none;
+                        // padding: 0 10px;
+                        width: 45%;
+                        height: 45%;
+                        .cls-1{
+                            stroke: white;
+                            fill:white;
+                        }
+                    }
+
+                }
+                
+            }
+        }
+
+        .brand-gallery__item.item-1{
+            grid-column: 1 / span 3;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            
+        }
+        .brand-gallery__item.item-2{
+            grid-column: 4 / span 1;
+        }
+        .brand-gallery__item.item-3{
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 2;
+            span{
+                font-size: 25px;
+                font-weight: 200;
+            }
+        }
+        .brand-gallery__item.item-4{
+            grid-column: 3 / span 1;
+        }
+        .brand-gallery__item.item-5{
+            grid-column: 4 / span 1;
+            @media screen and (max-width:768px){
+                display:none;
+            }
+        }
+        .brand-gallery__item.item-6{
+            grid-column: 3 / span 1;
+            @media screen and (max-width:768px){
+                display:none;
+            }
+        }
+        .brand-gallery__item.item-7{
+            grid-column: 4 / span 1;
+            @media screen and (max-width:768px){
+                display:none;
+            }
+        }
+        .see__more{
+            display:none;
+            text-align: center;
+            padding: 18px 0;
+            background:$color-blue-1;
+            p{
+                cursor: pointer;
+                font-size: 25px;
+                color:white;
+                
+            }
+            @media screen and (max-width: 768px){
+                display:block
+            }
+        }
+        .see__less{
+            display:none;
+            text-align: center;
+            padding: 18px 0;
+            background:$color-blue-1;
+            p{
+                cursor: pointer;
+                font-size: 25px;
+                color:white;
+                
+            }
+        }
+    }
+}

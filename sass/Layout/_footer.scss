@@ -1,0 +1,172 @@
+.footer{
+    .footer__socialize{
+        padding: 30px 0;
+        background-color: $color-blue-3;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+        .footer__feedback{
+            width: 60%;
+            margin: 0;
+            @media screen and (max-width: 992px){
+                padding-top: 20px;
+                .footer__feedback2{
+                    display:none;
+                }
+            }
+            @media screen and (max-width: 768px){
+                padding: 0;
+                padding-bottom: 20px;
+                width: 100%;
+                display: block;
+                position: relative;
+                &::before{
+                    content:"";
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    
+                    width: 100%;
+                    height: 1px;
+                    background: $color-grey-3;
+                }
+                
+                
+            }
+            li{
+                display: inline-block;
+                margin-left: 30px;
+                
+                
+
+                a{
+                    text-decoration: none;
+                    
+                    padding: 10px 0;
+                    .footer__icon{
+                        display: inline-block;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        background-color: $color-blue-4 ;
+                        text-align: center;
+                        i{
+                            color:white;
+                            text-align: center;
+                            line-height: 40px;
+                            font-size: 20px;
+
+                        }
+                        
+                    }
+                    span{
+                        font-size: 20px;
+                        color: $color-blue-4;
+                    }
+                }
+            }
+        }
+        .footer__social--link{
+            width: 40%;
+            margin-left: 0 auto;
+            .footer__social--link__content{
+                display:flex;
+                align-items: center;
+                justify-content: flex-end;
+                @media screen and (max-width: 992px){
+                    display:block;
+                }
+                span{
+
+                    color:$color-white-0;
+                    font-size: 13px;
+                    margin: 0 20px;
+                    @media screen and (max-width: 992px){
+                        display:block;
+                        margin: 0;
+                        padding-bottom: 15px;
+                    }
+                }
+                @media screen and (max-width: 768px){
+                    padding-left: 25px;
+                    white-space:nowrap;
+                }
+
+            }
+        }
+    }
+    .footer__contact{
+        padding: 20px 20px;
+        .footer__wrap{
+            display:flex;
+            justify-content: space-between;
+            .language__setting{
+                display:inline-block;
+                i{
+                    color: $color-blue-1;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                span{
+                    color: $color-blue-1;
+                    cursor: pointer;
+                }
+            }
+            .brand-logo{
+                display: inline-block;
+                background-image: url(../img/bsr-sprite2x.png);
+                background-repeat: no-repeat;
+                background-position: -150px 0;
+                width: 73px;
+                height: 26px;
+                background-size: 300px 150px;
+                padding: 0;
+                margin: 0;
+                @media screen and (max-width:768px){
+                    display:none;
+                }
+            }
+        }
+        .footer__content{
+            li{
+                display: inline-block;
+                list-style-type: none; 
+                margin: 20px 10px;
+                @media screen and (max-width: 768px){
+                    display:block;
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-grey-2;
+                    &:hover{
+                        color: $color-grey-5;
+                    }
+                }
+            }
+        }
+        .footer__logo{
+            display:none;
+            .brand-logo{
+                
+                display: inline-block;
+                background-image: url(../img/bsr-sprite2x.png);
+                background-repeat: no-repeat;
+                background-position: -150px 0;
+                width: 73px;
+                height: 26px;
+                background-size: 300px 150px;
+                padding: 0;
+                margin: 0;
+                
+            }
+                    @media screen and (max-width:768px){
+                        display:inline-block;
+                        
+                    }
+        }
+    }
+
+}

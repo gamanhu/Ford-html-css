@@ -1,0 +1,162 @@
+.carousel{
+    .carousel__content{
+        position: relative;
+        .carousel__item{
+            a{
+                position: absolute;
+                top: 0px;
+                left: 30px;
+                width:100%;
+                height:100%;
+                padding: 30px;
+                
+                &:hover{
+                    text-decoration: none;
+                }
+                &:hover button{
+                    background-color: $color-white-0;
+                    color: $color-blue-1;
+                    text-decoration: none;
+                }
+                &:hover .svg-1{
+                    display: none;
+                }
+                &:hover .svg-2{
+                    display: inline-block;
+                }
+                // &:hover .svg-2{
+                //     display: block;
+                // }
+                // &:hover .btn--circle-arrow{
+                //     color: transparent;
+                //     text-decoration: none;
+                //     i{
+                //         -webkit-background-clip: text;
+                //         -webkit-text-color-fill: transparent;
+
+                //     }
+                //     background-color: $color-white-0;
+                // }
+                h2{
+                    color:white;
+                    font-size: 45px;
+                    margin-bottom: 30px;
+                    font-weight: 300;
+                }
+                span{
+                    color:white;
+
+                }
+                p{
+                    color:white;
+                }
+                button:hover{
+                    border: 1px solid $color-white-0;
+                }
+
+                .svg-1{
+                    width: 30px;
+                    height: 30px;
+                    .cls-1{
+                        stroke: white;
+                        fill:none;
+                    }
+                }
+                .svg-2{
+                    display:none;
+                    width: 30px;
+                    height: 30px;
+                    .cls-1{
+                        stroke: white;
+                        fill:white;
+                    }
+                }
+
+            }
+        }
+
+        
+        .owl-nav{
+            .owl-prev{
+                position: absolute;
+                top:50%;
+                left:0;
+                transform: translateY(-50%);
+                border: 1px solid $color-grey-2;
+                background-color: $color-grey-2;
+                &:hover{
+                    border: 1px solid $color-blue-1;
+                    background-color: $color-white-0;
+                }
+                &:hover p{
+                    color:$color-blue-1;
+                }
+                &:focus{
+                    border: 1px solid $color-blue-1;
+                    background-color: $color-white-0;
+                }
+                &:focus p{
+                    color:$color-blue-1;
+                }
+                p{
+                    width: 62px;
+                    height: 53px;
+                    color:white;
+                }
+                
+            }
+            .owl-next{
+                position: absolute;
+                top:50%;
+                right:0;
+                transform: translateY(-50%);
+                border: 1px solid $color-grey-2;
+                background-color: $color-grey-2;
+                &:hover{
+                    border: 1px solid $color-blue-1;
+                    background-color: $color-white-0;
+                }
+                &:hover p{
+                    color:$color-blue-1;
+                }
+                &:focus{
+                    border: 1px solid $color-blue-1;
+                    background-color: $color-white-0;
+                }
+                &:focus p{
+                    color:$color-blue-1;
+                }
+                p{
+                    width: 62px;
+                    height: 53px;
+                    color:white;
+                }
+            }
+        }
+        .owl-dots{
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            .owl-dot{
+                &:focus{
+                    outline:none;
+                }
+                &:hover span{
+                    transform: scale(1.5,1.5);
+                }
+                &.active span{
+                    border: 1px solid white;
+                    background-color: black;
+                    transform: scale(1.5,1.5);
+                }
+                span{
+                    // transform: scale(1,1);
+                    background-color: white;
+                    transition: all 0.5s;
+                }
+            }
+        }
+        
+    }
+}
